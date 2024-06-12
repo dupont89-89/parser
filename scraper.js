@@ -12,7 +12,7 @@ const delayTime = 1500; // Задержка между запросами в м�
 (async () => {
   try {
     const products = [];
-    let processedCount = 0; // Счетчик обработанных URL
+    let processedCount = 0; // Счетчик обработанных URL c 0
 
     for (let link of links) {
       const { data } = await axios.get(link);
